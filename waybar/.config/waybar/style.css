@@ -1,0 +1,156 @@
+@import url("./mocha.css");
+* {
+	font-family: "CaskaydiaCove Nerd Font Propo";
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+#waybar {
+	background: transparent;
+	color: @text;
+}
+
+#workspaces {
+    background: transparent;
+}
+
+#workspaces button {
+	color: @crust;
+    background-color: @sky;
+	border-radius: 0;
+    margin: 0 5px 0 0;
+    padding: 0 5px;
+}
+
+#workspaces button.active {
+    background-color: @mauve;
+	border-radius: 0;
+}
+
+#workspaces button.visible {
+    background-color: @mauve;
+	border-radius: 0;
+}
+
+#workspaces button:hover {
+	border-radius: 0;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#tray {
+	background-color: @base;
+	border: 2px solid @sky;
+	border-radius: 0;
+    padding: 0 10px;
+}
+
+#window {
+    color: @crust;
+    font-weight: bold;
+	background-color: @sky;
+	border-radius: 0;
+    padding: 0 15px;
+}
+
+window#waybar.empty #window {
+    background: none;
+}
+
+#pulseaudio {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+	border-radius: 0;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+}
+
+#battery {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+	border-radius: 0;
+    padding: 0 10px;
+    margin: 0 5px 0 0;
+}
+
+#battery.charging {
+	color: @green;
+	border-color: @green;
+}
+
+#battery.warning:not(.charging) {
+	color: @red;
+	border-color: @red;
+}
+
+#cpu {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-right: none;
+    border-radius: 0;
+    padding: 0 5px 0 10px;
+}
+
+#memory {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-left: none;
+    border-radius: 0;
+    padding: 0 10px 0 5px;
+    margin: 0 5px 0 0;
+}
+
+#disk.root {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-right: none;
+    border-radius: 0;
+    padding: 0 5px 0 10px;
+}
+
+#disk.home {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-left: none;
+    border-radius: 0;
+    padding: 0 10px 0 5px;
+    margin: 0 5px 0 0;
+}
+
+#clock.time {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-right: none;
+    border-radius: 0;
+    padding: 0 5px 0 10px;
+}
+
+#clock.date {
+	color: @sky;
+	background-color: @base;
+	border: 2px solid @sky;
+    border-left: none;
+	border-radius: 0;
+    padding: 0 10px 0 5px;
+    margin: 0 5px 0 0;
+}
+
+#custom-notification {
+    color: @sky;
+    font-family: "CaskaydiaCove Nerd Font Mono";
+    font-size: 15px;
+    background-color: @base;
+    border: 2px solid @sky;
+    border-radius: 0;
+    padding: 0 8px 0 8px;
+}
