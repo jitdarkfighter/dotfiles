@@ -33,7 +33,6 @@ eval "$(register-python-argcomplete pipx)"
 export PATH="$PATH:$HOME/.local/bin/flutter/bin"
 
 # venv_wrapper - # See https://gist.github.com/dbtek/fb2ddccb18f0cf63a654ea2cc94c8f19
-
 export VENV_HOME="$HOME/virtual_environments"
 [[ -d $VENV_HOME ]] || mkdir -p $VENV_HOME
 
